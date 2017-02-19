@@ -4,7 +4,7 @@ About
 
 Group Members
 -------------
-- Utku Yurter (Leader)
+- [Utku Yurter (Leader)](https://utkuyurter.github.io)
 - F.Sinan Sahin
 - Alican Aydogdu
 - [Inamullah Rasuna](https://irasuna.github.io)
