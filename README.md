@@ -7,6 +7,6 @@ Group Members
 - [Utku Yurter (Leader)](https://utkuyurter.github.io)
 - [F. Sinan Sahin](https://github.com/fsinan)
   * 3D Designer and C# Programmer
-- Alican Aydogdu
+- [Alican Aydogdu](https://alicanaydogdu.github.io/)
 - [Inamullah Rasuna](https://irasuna.github.io)
-- Omer Faruk Yolal
+- [Omer Faruk Yolal](https://oyolal.github.io)
