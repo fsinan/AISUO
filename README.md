@@ -1,6 +1,6 @@
 About
 -----
-**AISUO** is a survival game, created using Unity3D for our class (COMP 3322) project.
+**AISUO** is a Unity3D-based survival game, designated for our class (COMP 3322) project.
 
 Group Members
 -------------
