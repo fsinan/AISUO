@@ -4,7 +4,6 @@ Meeting #5
 
 
 **Attendance:**
-**Attendance:**
 - [x] Utku Yurter
 - [x] Inamullah Rasuna
 - [x] F.Sinan Sahin

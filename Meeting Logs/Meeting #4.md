@@ -4,7 +4,6 @@ Meeting #4
 
 
 **Attendance:**
-**Attendance:**
 - [x] Utku Yurter
 - [x] Inamullah Rasuna
 - [x] F.Sinan Sahin
