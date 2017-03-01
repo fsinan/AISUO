@@ -8,5 +8,6 @@ Group Members
 - [F. Sinan Sahin](https://github.com/fsinan)
   * 3D Designer and C# Programmer
 - [Alican Aydogdu](https://alicanaydogdu.github.io)
+  * 3D Designer and C# Programmer 
 - [Inamullah Rasuna](https://irasuna.github.io)
 - [Omer Faruk Yolal](https://oyolal.github.io)
