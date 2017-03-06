@@ -13,4 +13,3 @@ Group Members
 - [Inamullah Rasuna](https://irasuna.github.io)
   * 3D Designer and C# Programmer
 - [Omer Faruk Yolal](https://oyolal.github.io)
-  * Amele :)
