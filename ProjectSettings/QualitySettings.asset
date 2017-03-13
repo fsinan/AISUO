@@ -141,11 +141,7 @@ QualitySettings:
     pixelLightCount: 4
     shadows: 2
     shadowResolution: 2
-<<<<<<< HEAD
     shadowProjection: 0
-=======
-    shadowProjection: 1
->>>>>>> refs/remotes/utkuyurter/master
     shadowCascades: 4
     shadowDistance: 150
     shadowNearPlaneOffset: 3
