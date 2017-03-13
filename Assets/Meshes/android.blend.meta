@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: 33df4b290d256414998e34cf0a0a547e
+timeCreated: 1489339519
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: android-ants
+    100004: android-arm-l
+    100006: android-arm-r
+    100008: android-body
+    100010: android-eyes
+    100012: android-foot-l
+    100014: android-foot-r
+    100016: android-hand-l
+    100018: android-hand-r
+    100020: android-head
+    100022: android-leg-lower-l
+    100024: android-leg-lower-r
+    100026: android-leg-upper-l
+    100028: android-leg-upper-r
+    100030: arm-l
+    100032: arm-r
+    100034: arm_control-l
+    100036: arm_control-r
+    100038: Armature
+    100040: body
+    100042: foot_control-l
+    100044: foot_control-r
+    100046: hand-l
+    100048: hand-r
+    100050: hand_control-l
+    100052: hand_control-r
+    100054: head
+    100056: knee_control-l
+    100058: knee_control-r
+    100060: leg-l-l
+    100062: leg-l-r
+    100064: leg-u-l
+    100066: leg-u-r
+    100068: ref
+    100070: root
+    100072: sho-l
+    100074: sho-r
+    100076: android-head_MeshPart0
+    100078: android-head_MeshPart1
+    100080: leg-c-l
+    100082: leg-c-r
+    400000: //RootNode
+    400002: android-ants
+    400004: android-arm-l
+    400006: android-arm-r
+    400008: android-body
+    400010: android-eyes
+    400012: android-foot-l
+    400014: android-foot-r
+    400016: android-hand-l
+    400018: android-hand-r
+    400020: android-head
+    400022: android-leg-lower-l
+    400024: android-leg-lower-r
+    400026: android-leg-upper-l
+    400028: android-leg-upper-r
+    400030: arm-l
+    400032: arm-r
+    400034: arm_control-l
+    400036: arm_control-r
+    400038: Armature
+    400040: body
+    400042: foot_control-l
+    400044: foot_control-r
+    400046: hand-l
+    400048: hand-r
+    400050: hand_control-l
+    400052: hand_control-r
+    400054: head
+    400056: knee_control-l
+    400058: knee_control-r
+    400060: leg-l-l
+    400062: leg-l-r
+    400064: leg-u-l
+    400066: leg-u-r
+    400068: ref
+    400070: root
+    400072: sho-l
+    400074: sho-r
+    400076: android-head_MeshPart0
+    400078: android-head_MeshPart1
+    400080: leg-c-l
+    400082: leg-c-r
+    2300000: android-ants
+    2300002: android-eyes
+    3300000: android-ants
+    3300002: android-eyes
+    4300000: android-hand-r
+    4300002: android-hand-l
+    4300004: android-foot-l
+    4300006: android-leg-lower-l
+    4300008: android-leg-upper-l
+    4300010: android-arm-l
+    4300012: android-arm-r
+    4300014: android-foot-r
+    4300016: android-leg-lower-r
+    4300018: android-leg-upper-r
+    4300020: android-head
+    4300022: android-ants
+    4300024: android-eyes
+    4300026: android-body
+    4300028: android-head_MeshPart0
+    4300030: android-head_MeshPart1
+    7400000: Default Take
+    7400002: ArmatureAction
+    7400004: Cycle
+    7400006: Movement
+    7400008: Walk
+    7400010: Idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: android-arm-l
+    13700002: android-arm-r
+    13700004: android-body
+    13700006: android-foot-l
+    13700008: android-foot-r
+    13700010: android-hand-l
+    13700012: android-hand-r
+    13700014: android-head
+    13700016: android-leg-lower-l
+    13700018: android-leg-lower-r
+    13700020: android-leg-upper-l
+    13700022: android-leg-upper-r
+    13700024: android-head_MeshPart0
+    13700026: android-head_MeshPart1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 1
+      lastFrame: 387
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: android-arm-l
+        weight: 1
+      - path: android-arm-r
+        weight: 1
+      - path: android-body
+        weight: 1
+      - path: android-foot-l
+        weight: 1
+      - path: android-foot-r
+        weight: 1
+      - path: android-hand-l
+        weight: 1
+      - path: android-hand-r
+        weight: 1
+      - path: android-head
+        weight: 1
+      - path: android-leg-lower-l
+        weight: 1
+      - path: android-leg-lower-r
+        weight: 1
+      - path: android-leg-upper-l
+        weight: 1
+      - path: android-leg-upper-r
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/head
+        weight: 1
+      - path: Armature/root/body/leg-u-l
+        weight: 1
+      - path: Armature/root/body/leg-u-l/leg-l-l
+        weight: 1
+      - path: Armature/root/body/leg-u-r
+        weight: 1
+      - path: Armature/root/body/leg-u-r/leg-l-r
+        weight: 1
+      - path: Armature/root/body/sho-l
+        weight: 1
+      - path: Armature/root/body/sho-l/arm-l
+        weight: 1
+      - path: Armature/root/body/sho-l/arm-l/hand-l
+        weight: 1
+      - path: Armature/root/body/sho-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r/hand-r
+        weight: 1
+      - path: Armature/root/foot_control-l
+        weight: 1
+      - path: Armature/root/foot_control-r
+        weight: 1
+      - path: Armature/root/hand_control-l
+        weight: 1
+      - path: Armature/root/hand_control-r
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Movement
+      takeName: Movement
+      firstFrame: 1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: android-arm-l
+        weight: 1
+      - path: android-arm-r
+        weight: 1
+      - path: android-body
+        weight: 1
+      - path: android-foot-l
+        weight: 1
+      - path: android-foot-r
+        weight: 1
+      - path: android-hand-l
+        weight: 1
+      - path: android-hand-r
+        weight: 1
+      - path: android-head
+        weight: 1
+      - path: android-leg-lower-l
+        weight: 1
+      - path: android-leg-lower-r
+        weight: 1
+      - path: android-leg-upper-l
+        weight: 1
+      - path: android-leg-upper-r
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/head
+        weight: 1
+      - path: Armature/root/body/leg-u-l
+        weight: 1
+      - path: Armature/root/body/leg-u-l/leg-l-l
+        weight: 1
+      - path: Armature/root/body/leg-u-r
+        weight: 1
+      - path: Armature/root/body/leg-u-r/leg-l-r
+        weight: 1
+      - path: Armature/root/body/sho-l
+        weight: 1
+      - path: Armature/root/body/sho-l/arm-l
+        weight: 1
+      - path: Armature/root/body/sho-l/arm-l/hand-l
+        weight: 1
+      - path: Armature/root/body/sho-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r/hand-r
+        weight: 1
+      - path: Armature/root/foot_control-l
+        weight: 1
+      - path: Armature/root/foot_control-r
+        weight: 1
+      - path: Armature/root/hand_control-l
+        weight: 1
+      - path: Armature/root/hand_control-r
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: android-arm-l
+        weight: 1
+      - path: android-arm-r
+        weight: 1
+      - path: android-body
+        weight: 1
+      - path: android-foot-l
+        weight: 1
+      - path: android-foot-r
+        weight: 1
+      - path: android-hand-l
+        weight: 1
+      - path: android-hand-r
+        weight: 1
+      - path: android-head
+        weight: 1
+      - path: android-leg-lower-l
+        weight: 1
+      - path: android-leg-lower-r
+        weight: 1
+      - path: android-leg-upper-l
+        weight: 1
+      - path: android-leg-upper-r
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/head
+        weight: 1
+      - path: Armature/root/body/leg-u-l
+        weight: 1
+      - path: Armature/root/body/leg-u-l/leg-l-l
+        weight: 1
+      - path: Armature/root/body/leg-u-r
+        weight: 1
+      - path: Armature/root/body/leg-u-r/leg-l-r
+        weight: 1
+      - path: Armature/root/body/sho-l
+        weight: 1
+      - path: Armature/root/body/sho-l/arm-l
+        weight: 1
+      - path: Armature/root/body/sho-l/arm-l/hand-l
+        weight: 1
+      - path: Armature/root/body/sho-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r/hand-r
+        weight: 1
+      - path: Armature/root/foot_control-l
+        weight: 1
+      - path: Armature/root/foot_control-r
+        weight: 1
+      - path: Armature/root/hand_control-l
+        weight: 1
+      - path: Armature/root/hand_control-r
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

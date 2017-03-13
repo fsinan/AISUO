@@ -126,8 +126,13 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
+<<<<<<< HEAD
+    m_Bias: 0.01
+    m_NormalBias: 0.1
+=======
     m_Bias: 0.05
     m_NormalBias: 0.4
+>>>>>>> refs/remotes/utkuyurter/master
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
@@ -154,6 +159,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
+--- !u!1001 &781388287
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950845973591506, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 22e0f174df702e94fb89f7aa4915ca94, type: 2}
+  m_IsPrefabParent: 0
+=======
+>>>>>>> refs/remotes/utkuyurter/master
 --- !u!1 &1840796802
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,10 +284,19 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1840796802}
+<<<<<<< HEAD
+  m_LocalRotation: {x: 0.23157871, y: -0, z: -0, w: 0.9728162}
+  m_LocalPosition: {x: 0, y: 4.3, z: -5.21}
+=======
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
+>>>>>>> refs/remotes/utkuyurter/master
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
+  m_LocalEulerAnglesHint: {x: 26.78, y: 0, z: 0}
+=======
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> refs/remotes/utkuyurter/master
