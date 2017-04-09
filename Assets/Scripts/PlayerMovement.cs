@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float walkingSpeed = 2.5f;
 	public float sidewaysSpeed = 2.5f;
+	public float mouseSensitivity = 100f;
 
 	private Animator animator;
 
@@ -61,6 +62,9 @@ public class PlayerMovement : MonoBehaviour {
 				walking = false;
 			}
 		}
+
+		// Rotating using mouse axes
+		transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * mouseSensitivity);
 
 		// Walking sideways
 		transform.Translate(h * Vector3.right * sidewaysSpeed * Time.deltaTime);

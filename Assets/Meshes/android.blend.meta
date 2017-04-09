@@ -115,6 +115,7 @@ ModelImporter:
     7400006: Movement
     7400008: Walk
     7400010: Idle
+    7400012: Hold-pistol
     9500000: //RootNode
     11100000: //RootNode
     13700000: android-arm-l
@@ -420,6 +421,96 @@ ModelImporter:
       - path: Armature/root/hand_control-r
         weight: 1
       maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hold-pistol
+      takeName: Hold-pistol
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: android-arm-l
+        weight: 1
+      - path: android-arm-r
+        weight: 1
+      - path: android-body
+        weight: 1
+      - path: android-foot-l
+        weight: 1
+      - path: android-foot-r
+        weight: 1
+      - path: android-hand-l
+        weight: 1
+      - path: android-hand-r
+        weight: 1
+      - path: android-head
+        weight: 1
+      - path: android-leg-lower-l
+        weight: 1
+      - path: android-leg-lower-r
+        weight: 1
+      - path: android-leg-upper-l
+        weight: 1
+      - path: android-leg-upper-r
+        weight: 1
+      - path: Armature
+        weight: 0
+      - path: Armature/root
+        weight: 0
+      - path: Armature/root/body
+        weight: 0
+      - path: Armature/root/body/head
+        weight: 0
+      - path: Armature/root/body/leg-u-l
+        weight: 0
+      - path: Armature/root/body/leg-u-l/leg-l-l
+        weight: 0
+      - path: Armature/root/body/leg-u-r
+        weight: 0
+      - path: Armature/root/body/leg-u-r/leg-l-r
+        weight: 0
+      - path: Armature/root/body/sho-l
+        weight: 0
+      - path: Armature/root/body/sho-l/arm-l
+        weight: 0
+      - path: Armature/root/body/sho-l/arm-l/hand-l
+        weight: 0
+      - path: Armature/root/body/sho-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r
+        weight: 1
+      - path: Armature/root/body/sho-r/arm-r/hand-r
+        weight: 1
+      - path: Armature/root/foot_control-l
+        weight: 0
+      - path: Armature/root/foot_control-r
+        weight: 0
+      - path: Armature/root/hand_control-l
+        weight: 0
+      - path: Armature/root/hand_control-r
+        weight: 0
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     isReadable: 1
