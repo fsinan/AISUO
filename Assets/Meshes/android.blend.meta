@@ -133,9 +133,9 @@ ModelImporter:
     13700024: android-head_MeshPart0
     13700026: android-head_MeshPart1
   materials:
-    importMaterials: 0
-    materialName: 0
-    materialSearch: 1
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
