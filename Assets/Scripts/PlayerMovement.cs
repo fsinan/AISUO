@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float walkingSpeed = 2.5f;
 	public float sidewaysSpeed = 2.5f;
-	public float mouseSensitivity = 100f;
 
 	private Animator animator;
 
@@ -21,10 +20,13 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
-		float h = Input.GetAxis ("Horizontal");
-		float v = Input.GetAxis ("Vertical");
+        if (!GameManager.isGamePaused)
+        {
+            float h = Input.GetAxis("Horizontal");
+            float v = Input.GetAxis("Vertical");
 
-		Movement (h, v);
+            Movement(h, v);
+        }
 	}
 
 	protected void Movement(float h, float v)
@@ -48,10 +50,11 @@ public class PlayerMovement : MonoBehaviour {
 			} 
 			else 
 			{
-				animator.applyRootMotion = true;
+                //animator.applyRootMotion = true;
+                animator.applyRootMotion = false;
 
-				// Walking forwards or backwards
-				animator.SetFloat ("speed", v * walkingSpeed);
+                // Walking forwards or backwards
+                animator.SetFloat ("speed", v * walkingSpeed);
 			}
 		} 
 		else 
@@ -63,10 +66,8 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 
-		// Rotating using mouse axes
-		transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * mouseSensitivity);
-
 		// Walking sideways
 		transform.Translate(h * Vector3.right * sidewaysSpeed * Time.deltaTime);
-	}
+        transform.Translate(v * Vector3.forward * walkingSpeed * Time.deltaTime);
+    }
 }
