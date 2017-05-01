@@ -125,7 +125,7 @@ namespace CSVEditor
 
         private static void saveLeaderboard(List<Record> oldLeaderboard)
         {
-            var leaderboard = oldLeaderboard.OrderByDescending(x => double.Parse(x.score));
+            var leaderboard = oldLeaderboard.OrderByDescending(x => int.Parse(x.score));
 
             using (FileStream fs = new FileStream(leaderboardDataPath, FileMode.Create))
             {
@@ -141,7 +141,7 @@ namespace CSVEditor
             }
         }
 
-        public static void addRecord(string name, double score)
+        public static void addRecord(string name, int score)
         {
             var leaderboard = loadLeaderboard();
 
