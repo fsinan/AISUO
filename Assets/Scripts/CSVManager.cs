@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace CSVEditor
 {
@@ -14,6 +17,83 @@ namespace CSVEditor
 
         static string leaderboardDataPath = @"Data\Data1.dat";
 
+        private static string encrypt(string toEncrypt, bool useHashing)
+        {
+            byte[] keyArray;
+            byte[] toEncryptArray = UTF8Encoding.UTF8.GetBytes(toEncrypt);
+
+            //If hashing use get hashcode regards to your key
+            if (useHashing)
+            {
+                MD5CryptoServiceProvider hashmd5 = new MD5CryptoServiceProvider();
+                keyArray = hashmd5.ComputeHash(UTF8Encoding.UTF8.GetBytes("AISUO17"));
+                //Always release the resources and flush data
+                //of the Cryptographic service provide. Best Practice
+
+                hashmd5.Clear();
+            }
+            else
+                keyArray = UTF8Encoding.UTF8.GetBytes("AISUO17");
+
+            TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();
+            //set the secret key for the tripleDES algorithm
+            tdes.Key = keyArray;
+            //mode of operation. there are other 4 modes. We choose ECB(Electronic code Book)
+            tdes.Mode = CipherMode.ECB;
+            //padding mode(if any extra byte added)
+            tdes.Padding = PaddingMode.PKCS7;
+
+            ICryptoTransform cTransform = tdes.CreateEncryptor();
+            //transform the specified region of bytes array to resultArray
+            byte[] resultArray = cTransform.TransformFinalBlock
+                    (toEncryptArray, 0, toEncryptArray.Length);
+            //Release resources held by TripleDes Encryptor
+            tdes.Clear();
+            //Return the encrypted data into unreadable string format
+            return Convert.ToBase64String(resultArray, 0, resultArray.Length);
+        }
+
+        private static string decrypt(string cipherString, bool useHashing)
+        {
+            byte[] keyArray;
+            //get the byte code of the string
+
+            byte[] toEncryptArray = Convert.FromBase64String(cipherString);
+
+            if (useHashing)
+            {
+                //if hashing was used get the hash code with regards to your key
+                MD5CryptoServiceProvider hashmd5 = new MD5CryptoServiceProvider();
+                keyArray = hashmd5.ComputeHash(UTF8Encoding.UTF8.GetBytes("AISUO17"));
+                //release any resource held by the MD5CryptoServiceProvider
+
+                hashmd5.Clear();
+            }
+            else
+            {
+                //if hashing was not implemented get the byte code of the key
+                keyArray = UTF8Encoding.UTF8.GetBytes("AISUO17");
+            }
+
+            TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();
+            //set the secret key for the tripleDES algorithm
+            tdes.Key = keyArray;
+            //mode of operation. there are other 4 modes.
+            //We choose ECB(Electronic code Book)
+
+            tdes.Mode = CipherMode.ECB;
+            //padding mode(if any extra byte added)
+            tdes.Padding = PaddingMode.PKCS7;
+
+            ICryptoTransform cTransform = tdes.CreateDecryptor();
+            byte[] resultArray = cTransform.TransformFinalBlock
+                    (toEncryptArray, 0, toEncryptArray.Length);
+            //Release resources held by TripleDes Encryptor
+            tdes.Clear();
+            //return the Clear decrypted TEXT
+            return UTF8Encoding.UTF8.GetString(resultArray);
+        }
+
         private static List<Record> loadLeaderboard()
         {
             List<Record> leaderboard = new List<Record>();
@@ -24,11 +104,12 @@ namespace CSVEditor
 
             using (StreamReader sr = new StreamReader(leaderboardDataPath))
             {
-                string headerLine = sr.ReadLine();
+                string headerLine = decrypt(sr.ReadLine(), true);
                 string line = "";
 
                 while ((line = sr.ReadLine()) != null)
                 {
+                    line = decrypt(line, true);
                     string[] tokens = line.Split(';');
 
                     var r = new Record();
@@ -44,23 +125,23 @@ namespace CSVEditor
 
         private static void saveLeaderboard(List<Record> oldLeaderboard)
         {
-            var leaderboard = oldLeaderboard.OrderByDescending(x => int.Parse(x.score));
+            var leaderboard = oldLeaderboard.OrderByDescending(x => double.Parse(x.score));
 
             using (FileStream fs = new FileStream(leaderboardDataPath, FileMode.Create))
             {
                 using (StreamWriter writer = new StreamWriter(fs))
                 {
-                    writer.WriteLine("name;score");
+                    writer.WriteLine(encrypt("name;score", true));
 
                     foreach(var r in leaderboard)
                     {
-                        writer.WriteLine(r.name + ";" + r.score);
+                        writer.WriteLine(encrypt(r.name + ";" + r.score, true));
                     }
                 }
             }
         }
 
-        public static void addRecord(string name, int score)
+        public static void addRecord(string name, double score)
         {
             var leaderboard = loadLeaderboard();
 
